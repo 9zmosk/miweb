@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Finlandica';
+}
+
+body {
+  font-family: arial;
+  background-image: url(../media/fondo4.jpg);
+}
+
+.Registro {
+  width: 350px;
+  height: 420px;
+  background: #4e4d4d;
+  margin: auto;
+  margin-top: 150px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 4px solid #C1FF72;
+  border-bottom: 4px solid #C1FF72;
+  color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+.icono{
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 100px;
+}
+
+.Registro h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-bottom: 1.5px solid;
+}
+
+.entradas {
+  width: 100%;
+  border: 1.5px solid #C1FF72;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 11px 10px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.enter {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: #C1FF72;
+  margin-top: 5px;
+  margin-left: 80px;
+
+}
+
+.enter:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #464141
+}
+.registrar{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: white;
+
+}
+.enter a{
+  text-decoration: none;
+  color: black;
+}
