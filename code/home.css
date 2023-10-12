@@ -81,7 +81,7 @@ header ul li .contacto:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2   0px;
+    margin-top: 20px;
 }
 
 .content .textBox{
@@ -106,7 +106,7 @@ header ul li .contacto:hover{
 }
 .content .textBox a{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 8px 20px;
     background: #C1FF72;
     color: black;
