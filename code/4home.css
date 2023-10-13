@@ -83,7 +83,6 @@ header ul li .contacto:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
 }
 
 .content .textBox{
@@ -118,7 +117,7 @@ header ul li .contacto:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
-
+/* 
 .content .imgBox{   
     width: 500px;
     display: flex;
@@ -134,4 +133,4 @@ header ul li .contacto:hover{
     height: 430px;
     opacity: .8;
     transition: .5 case;
-}
+} */
