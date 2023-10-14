@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Finlandica';
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -17,7 +17,7 @@ section{
     transition: 0.5s;
 }
 
-header{
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,25 +28,26 @@ header{
     align-items: center;
 }
 
-header .logo  {
+header .logo {
     position: relative;
     max-width: 80px;
 }
-header .logo img{
+
+header .logo img {
     width: 80px;
 }
 
-header ul{
+header ul {
     position: relative;
     display: flex;
 }
 
-header ul li{
+header ul li {
     list-style: none;
 }
 
 
-header ul li a{
+header ul li a {
     display: inline-block;
     color: #C1FF72;
     font-weight: 500;
@@ -55,29 +56,17 @@ header ul li a{
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
-    
+
 }
 
-header ul li .nos:hover{
+header ul li a:hover {
     background-color: #C1FF72;
     color: black;
-    font-size: 1.2rem;
     transition: 0.4s;
     margin-right: 5px;
 }
-header ul li .cursos:hover{
-    background-color: #C1FF72;
-    color: black;
-    font-size: 1.2rem;
-    transition: 0.4s;
-}
-header ul li .contacto:hover{
-    background-color: #C1FF72;
-    color: black;
-    font-size: 1.2rem;
-    transition: 0.4s;
-}
-.content{
+
+.content {
     position: relative;
     width: 100%;
     display: flex;
@@ -85,27 +74,28 @@ header ul li .contacto:hover{
     align-items: center;
 }
 
-.content .textBox{
+.content .textBox {
     position: relative;
     max-width: 600px;
 }
 
-.content .textBox h2{
+.content .textBox h2 {
     color: #fff;
     font-size: 4em;
     line-height: 1.5em;
     font-weight: 900;
 }
 
-.content .textBox h2 span{
+.content .textBox h2 span {
     font-size: 2em;
-    color: #C1FF72  ;
+    color: #C1FF72;
 }
 
-.content .textBox p{
+.content .textBox p {
     color: #fff;
 }
-.content .textBox a{
+
+.content .textBox a {
     display: inline-block;
     margin-top: 25px;
     padding: 8px 20px;
@@ -117,6 +107,7 @@ header ul li .contacto:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
+
 /* 
 .content .imgBox{   
     width: 500px;

@@ -26,7 +26,7 @@ body {
   align-items: center;
 }
 
-.icono{
+.icono {
   display: flex;
   justify-content: center;
   width: 80px;
@@ -74,7 +74,8 @@ body {
   transition: 0.3s;
   background-color: #779a49
 }
-.enter a{
+
+.enter a {
   text-decoration: none;
   color: black;
 }
