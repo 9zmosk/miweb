@@ -247,6 +247,7 @@ nav ul li ul a:hover {
 #caracteristicas li {
     margin: 16px 0px;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* Pie de pagina */
@@ -262,7 +263,7 @@ footer p {
 }
 
 footer .container {
-    height: 150px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
