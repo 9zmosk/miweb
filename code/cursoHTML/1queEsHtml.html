@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>¿Que es HTML?</title>
+    <!-- Caracteres epeciales -->
+    <meta charset="UTF-8">
+    <!-- Icono de la pagina -->
+    <link rel="shortcut icon" href="../../media/Logo.png">
+    <!-- Link con el CSS -->
+    <link rel="stylesheet" href="1queEsHtml.css">
+    <!-- Fuente Finlandica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="../../media/Logo.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Buscar">
+            </div>
+        </div>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href=".header__superior" id="selected"></a></li>
+                        <li><a href="#">Cursos</a>
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="info_container">
+        <h1>Introduccion a HTML</h1>
+        <div class="boton_siguiente">
+            <a class="siguiente" href="#"><button type="button" class="btn btn-outline-secondary">Siguiente
+                    ❯</button>
+            </a>
+            <br><br>
+        </div>
+        <h4>HTML es un lenguaje de marcado estandar para crear paginas web.</h4>
+        <br>
+
+        <h2>¿Que es HTML?</h2>
+        <ul>
+            <li>HTML significa Hyper Text Markup Language</li>
+            <li>HTML describe la estructura de una pagina web</li>
+            <li>HTML consiste de una serie de elementos</li>
+            <li>Los elementos HTML le dicen al navegador como tiene que mostrar el contenido</li>
+            <li>Los elementos HTML etiquetan fragmentos de contenido como "este es un encabezado", "este es un
+                párrafo", "este es un enlace", etc.</li>
+        </ul>
+        <br>
+
+        <h2>Un sencillo ejemplo de un documento HTML</h2>
+        <div class="ejemplo">
+            <h3>Ejemplo</h3>
+            <div class="ejemploDiagrama">
+                <span class="tagnamecolor" style="color: mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:brown">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:mediumorchid"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:mediumorchid"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Titulo de la Pagina<span
+                    class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:mediumorchid"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Mi primer encabezado<span
+                    class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:mediumorchid"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Mi primer parrafo<span
+                    class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:mediumorchid"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:mediumorchid"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <br><br>
+        <div class="ejemploExplicado">
+
+            <h3>Ejemplo Explicado:</h3>
+            <ul>
+                <li>La declaracion <code>&lt;!DOCTYPE html&gt;</code> define que este documento esta
+                    ciendo desarrollado en HTML 5</li>
+                <li>El elemento+ <code>&lt;html&gt;</code> es la raiz de las paginas HTML</li>
+                <li>El elemento <code>&lt;head&gt;</code> contiene metainformacion sobre la pagina, esta no se ve en el
+                    cuerpo de la pagina.</li>
+                <li>El elemento <code>&lt;title&gt;</code> especifica un título para la página HTML (que se muestra en
+                    la barra de título del navegador o en la pestaña de la página)</li>
+                <li>El elemento <code>&lt;body&gt;</code> define el cuerpo del documento y es un contenedor para todos
+                    los contenidos visibles, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.
+                </li>
+                <li>El elemento <code>&lt;h1&gt;</code> define un encabezado grande</li>
+                <li>El elemento <code>&lt;p&gt;</code> define un párrafo</li>
+            </ul>
+        </div>
+        <br>
+
+        <h2>¿Que es un elemento html?</h2>
+        <p>Un elemento HTML se define mediante una etiqueta de inicio, algo de contenido y una etiqueta de cierre:
+        </p>
+        <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+            <span class="spes_tagname">
+                <span class="spes_tag">&lt;</span>nombreEriquieta<span class="spes_tag">&gt;</span></span>
+            Aca va el contenido...
+            <span class="spes_tagname">
+                <span class="spes_tag">&lt;</span>/nombreEtiqueta<span class="spes_tag">&gt;</span></span>
+        </div>
+
+        <p>El <strong>elemento</strong> HTML es todo, desde la etiqueta inicial hasta la etiqueta final:</p>
+
+        <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+            <span class="spes_tagname"><span class="spes_tag">&lt;<span
+                        class="spes_tagname">h1</span>&gt;</span></span>Mi Primer Encabezado<span
+                class="spes_tagname"><span class="spes_tag">&lt;</span>/h1<span class="spes_tag">&gt;</span></span>
+        </div>
+
+        <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+            <span class="spes_tagname"><span class="spes_tag">&lt;</span>p<span class="spes_tag">&gt;</span></span>Mi
+            primer parrafo.<span class="spes_tagname"><span class="spes_tag">&lt;</span>/p<span
+                    class="spes_tag">&gt;</span></span>
+        </div>
+
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th>Etiqueta Apertura</th>
+                    <th>Contenido</th>
+                    <th>Etiqueta Cierre</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Mi primer encabezado.</td>
+                    <td>&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Mi primer parrafo.</td>
+                    <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td><em>Nada</em></td>
+                    <td><em>Nada</em></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <div class="nota">
+            <p><strong>Nota:</strong> Algunos elementos HTML no tienen contenido (como el elemento &lt;br&gt;). Estos
+                elementos se llaman elementos vacíos. ¡Los elementos vacíos no tienen etiqueta final!</p>
+        </div>
+        <br>
+        <br>
+        <h2>Navegadores Web</h2>
+        <p>El objetivo de un navegador web (Chrome, Edge, Firefox, Safari) es leer documentos HTML y mostrarlos
+            correctamente.</p>
+        <p>Un navegador no muestra las etiquetas HTML, pero las utiliza para determinar cómo mostrar el documento:</p>
+        <p><img alt="View in Browser" src="../../media/img_chrome.png" class="w3-image"></p>
+        <br>
+        <h2>Estructura de una página HTML</h2>
+        <p>A continuación se muestra una visualización de la estructura de una página HTML:</p>
+        <div class="ws-grey" style="width:99%;border:1px solid grey;padding:3px;margin:0;">&lt;html&gt;
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Titulo de la
+                    Pagina.&lt;/title&gt;
+                </div>
+                &lt;/head&gt;
+            </div>
+            <div class="ws-grey" style="width:90%;border:1px solid grey;padding:3px;margin:20px;">&lt;body&gt;
+                <div class="w3-white" style="width:90%;border:1px solid grey;padding:3px;margin:20px;">
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Esto es un
+                        encabezado&lt;/h1&gt;</div>
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Esto es un
+                        parrafo.&lt;/p&gt;</div>
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Esto es otro
+                        parrafo.&lt;/p&gt;</div>
+                </div>
+                &lt;/body&gt;
+            </div>
+            &lt;/html&gt;
+        </div>
+        <br><br>
+        <div class="w3-panel w3-note">
+            <p><strong>Nota:</strong> El contenido dentro de la sección &lt;body&gt; se mostrará en un navegador. El
+                contenido dentro del elemento &lt;title&gt; se mostrará en la barra de título del navegador o en la
+                pestaña de la página.</p>
+        </div>
+        <br>
+
+        <h2>Historia HTML</h2>
+        <p>Desde los primeros días de la World Wide Web, ha habido muchas versiones de HTML:</p>
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th>Año</th>
+                    <th>Vercion</th>
+                </tr>
+                <tr>
+                    <td>1989</td>
+                    <td>Tim Berners-Lee invento www</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>Tim Berners-Lee invento HTML</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>Dave Raggett redacto HTML+</td>
+                </tr>
+                <tr>
+                    <td>1995</td>
+                    <td>El grupo de trabajo HTML definió HTML 2.0</td>
+                </tr>
+                <tr>
+                    <td>1997</td>
+                    <td>Recomendación del W3C: HTML 3.2</td>
+                </tr>
+                <tr>
+                    <td>1999</td>
+                    <td>Recomendacion del W3C: HTML 4.01</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>Recomendacion del W3C: XHTML 1.0</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>Primer borrador público de WHATWG HTML5</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td><a href="http://whatwg.org/html/" target="_blank">WHATWG HTML5 Living Standard</a></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td><a href="http://www.w3.org/TR/html5/" target="_blank">W3C Recommendation: HTML5</a></td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>W3C Candidate Recommendation: HTML 5.1</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td><a href="http://www.w3.org/TR/html51/" target="_blank">W3C Recommendation: HTML5.1 2nd
+                            Edition</a></td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td><a href="http://www.w3.org/TR/html52/" target="_blank">W3C Recommendation: HTML5.2</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <div class="w3-panel w3-note">
+            <p>Este curso sigue el ultimo estandar HTML5.</p>
+        </div>
+        <br><br>
+        <h2>Ejercicio:</h2>
+        <h3> ¿Que quieren decir las siglas HTML?</h3>
+        <form id="quizForm">
+            <label>
+                <input type="radio" name="respuesta" value="css"> Cascading Style Sheets
+            </label><br>
+            <label>
+                <input type="radio" name="respuesta" value="php"> Hypertext Pre-Processor
+            </label><br>
+            <label>
+                <input type="radio" name="respuesta" value="html"> Hyper Text Markup Language
+            </label><br>
+            <label>
+                <input type="radio" name="respuesta" value="sql">Structured Query Language
+            </label><br>
+            <input class="comprobarRespuesta" type="submit" value="Comprobar respuesta">
+        </form>
+        <p id="resultado"></p>
+        <script src="1queEsHtml.js"></script>
+        <div class="boton_siguiente">
+            <a class="siguiente" href="#"><button type="button" class="btn btn-outline-secondary">Siguiente
+                    ❯</button>
+            </a>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
