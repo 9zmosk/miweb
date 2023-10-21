@@ -108,20 +108,62 @@ header ul li a:hover {
     text-transform: uppercase;
 }
 
-/* 
-.content .imgBox{   
-    width: 500px;
-    display: flex;
-    padding-right: 50px;
-    padding-top: 50px;
-    justify-content: flex-end;
+.content .textBox a:hover{
+    background-color: #565e64;
+    transition: 0.5s;
 }
 
-.content .imgBox img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    height: 430px;
-    opacity: .8;
-    transition: .5 case;
-} */
+@media (min-width: 768px) {
+    .card {
+      width: 15rem;
+      margin: 0 10px; /* Aumentar el espacio entre las tarjetas */
+    }
+    
+    .dropdown {
+        display: none;
+        visibility: collapse;
+    }
+
+  }
+  
+  /* Estilos para pantallas más pequeñas (768px o menos) */
+  @media (max-width: 850px) {
+    .card {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+@media (max-width: 780px) {
+    .nos, .cursos, .contacto, .login{
+        display: none;
+        visibility: hidden;
+    }
+
+    .dropdown{
+        margin-right: 0px;
+    }
+
+    .dropdown button{
+        font-size: 2rem;
+        padding: 0px 5px;
+        background-color: #C1FF72;
+        color: #1c1c1c;
+    }
+    .dropdown button:hover{
+        cursor: pointer;
+        background-color: #565e64;
+    }
+    .dropdown ul {
+        background-color: #C1FF72;
+    }
+
+    .dropdown ul li a{
+        margin-left: 0;
+    }
+
+    .dropdown ul li a:hover{
+        background-color: #565e64;
+        color: aliceblue;
+    }
+}
