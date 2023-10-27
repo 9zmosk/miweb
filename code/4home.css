@@ -9,7 +9,7 @@ section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 88px 100px;
+    padding: 88px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 70px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +93,7 @@ header ul li a:hover {
 
 .content .textBox p {
     color: #fff;
+    font-size: 1.2rem;
 }
 
 .content .textBox a {
@@ -115,7 +116,7 @@ header ul li a:hover {
 
 @media (min-width: 768px) {
     .card {
-      width: 15rem;
+      /* width: 15rem; */
       margin: 0 10px; /* Aumentar el espacio entre las tarjetas */
     }
     
@@ -125,19 +126,11 @@ header ul li a:hover {
     }
 
   }
-  
-  /* Estilos para pantallas más pequeñas (768px o menos) */
-  @media (max-width: 850px) {
-    .card {
-      visibility: hidden;
-      display: none;
-    }
-  }
-
-@media (max-width: 780px) {
+@media (max-width: 767px) {
     .nos, .cursos, .contacto, .login{
         display: none;
-        visibility: hidden;
+        visibility: none;
+        transition: 0.5s;
     }
 
     .dropdown{
@@ -164,6 +157,10 @@ header ul li a:hover {
 
     .dropdown ul li a:hover{
         background-color: #565e64;
-        color: aliceblue;
+        color: rgb(5, 9, 13);
     }
+    .content .card {
+        display: none;
+        visibility: hidden;
+      }
 }
