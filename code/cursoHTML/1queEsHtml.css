@@ -88,7 +88,7 @@ nav>ul>li:first-child>a {
 }
 
 nav>ul>li:first-child:hover>a {
-    background-image: url(../../media/casaNegra.png);
+    background-image: url(../../media/casa.png);
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -265,4 +265,10 @@ ul {
 .comprobarRespuesta:hover {
     background-color: #a3cf6a;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .search input {
+        display: none;
+    }
 }

@@ -7,9 +7,10 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     if (respuestaUsuario) {
         if (respuestaUsuario.value === 'html') {
             alert("¡Respuesta correcta!");
-            resultado.textContent = "Bien hecho, puedes avanzar al siguiente modulo"
+            resultado.textContent = "Bien hecho, puedes avanzar al siguiente modulo."
         } else {
             alert("Respuesta incorrecta. Inténtalo de nuevo.");
+            resultado.textContent = "Que lastima, pero no te proucupes, intentalo nuevamente."
         }
     } else {
         alert("Por favor, selecciona una respuesta.");
