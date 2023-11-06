@@ -116,8 +116,7 @@ header ul li a:hover {
 
 @media (min-width: 768px) {
     .card {
-      /* width: 15rem; */
-      margin: 0 10px; /* Aumentar el espacio entre las tarjetas */
+      margin: 0 10px;
     }
     
     .dropdown {
@@ -146,6 +145,7 @@ header ul li a:hover {
     .dropdown button:hover{
         cursor: pointer;
         background-color: #565e64;
+        transition: 0.4s;
     }
     .dropdown ul {
         background-color: #C1FF72;
@@ -157,7 +157,8 @@ header ul li a:hover {
 
     .dropdown ul li a:hover{
         background-color: #565e64;
-        color: rgb(5, 9, 13);
+        color: aliceblue;
+        transition: all 0.3s ease;
     }
     .content .card {
         display: none;
