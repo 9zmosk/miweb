@@ -228,6 +228,10 @@ body {
     transform: translateX(200%);
 }
 
+.form-container span{
+    font-size: 1.2rem   ;
+}
+
 @media screen and (max-width:650px){
     h1 {
         font-size: 1.5rem;
