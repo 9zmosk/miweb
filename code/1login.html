@@ -1,60 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <title>Login - Divs</title>
-  <link rel="shortcut icon" href="../media/Logo.png">
-  <link rel="stylesheet" href="1login.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="container" id="container">
-    <div class="form-container sign-up">
-      <form>
-        <img src="../media/Logo.png" alt="Pantalla con una etiqueta html vacia">
-        <h1>Accede a tu cuenta</h1>
-        <span>usa tus datos para ingresar</span>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button type="button" id="registrarBtn" onclick="location.href='4home.html'">Acceder</button>
-      </form>
-    </div>
-    <div class="form-container sign-in">
-      <form>
-        <img src="../media/Logo.png" alt="Pantalla con una etiqueta html vacia">
-        <h1>Crea una cuenta</h1>
-        <span>no olvides tus datos!</span>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <a href="#">Forget Your Password?</a>
-        <a href="4home.html">
-          <button type="button" id="registrarBtn" onclick="location.href='4home.html'">Registrarse</button>
-        </a>
-      </form>
-    </div>
-    <div class="toggle-container">
-      <div class="toggle">
-        <div class="toggle-panel toggle-left">
-          <h1>Bienvenido de vuelta!</h1>
-          <p>Ingresa todos tus datos personales para ingresar nuevamente a Divs</p>
-          <button class="hidden" id="login">Soy nuevo aqui</button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="1login.css" />
+    <link rel="shortcut icon" href="../media/Logo.png">
+    <title>Ingresa a Divs</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="4home.html" class="sign-in-form">
+            <img class="logo" src="../media/Logo.png" alt="Pantalla con una etiqueta html vacia">
+            <h2 class="title">Iniciar Secion</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Iniciar secion" class="btn solid" />
+            <p class="social-text">O usa tus redes sociales para acceder</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="4home.html" class="sign-up-form">
+            <img class="logo" src="../media/Logo.png" alt="Pantalla con una etiqueta html vacia">
+            <h2 class="title">Registrarse</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+              <input type="submit" class="btn" value="Registrarse" />
+            <p class="social-text">O registrate con tus redes sociales</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
         </div>
-        <div class="toggle-panel toggle-right">
-          <h1>Hola, Somos Divs!</h1>
-          <p>Registrate con tus datos personales para descubrir todo lo que Divs ofrece</p>
-          <button class="hidden" id="register">Tengo una Cuenta</button>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Eres nuevo aqui?</h3>
+            <p>
+              Registrate para conocer todo lo que ofrece Divs
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Registrarse
+            </button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Ya tienes una cuenta?</h3>
+            <p>
+              Entra con tus datos para seguir disfrutando de Divs
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Iniciar Secion
+            </button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="1login.js"></script>
-</body>
-
+    <script src="1login.js"></script>
+  </body>
 </html>
